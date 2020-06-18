@@ -15,8 +15,8 @@ namespace AirBrakeDemo
         {
             airbrake = new AirbrakeNotifier(new AirbrakeConfig
             {
-                ProjectId = "275997",
-                ProjectKey = "fd4b429bba78c4f190a0b9b799e99cd1",
+                ProjectId = "278011",
+                ProjectKey = "2ec6156676eeb0b9737cae0eae40a1e9",
                 LogFile = "airbrake.log",
                 Environment = "dev"
             });
@@ -46,6 +46,7 @@ namespace AirBrakeDemo
                 var response = airbrake.NotifyAsync(notice).Result;
                 Console.WriteLine("exception logged in airbarke dashboard");
                 Console.WriteLine("Status: {0}, Id: {1}, Url: {2}", response.Status, response.Id, response.Url);
+
 
             }
 
